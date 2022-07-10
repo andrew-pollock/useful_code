@@ -15,5 +15,14 @@ dependencies = [
     'pytest',
 ]
 
+[project.optional-dependencies]
+dev = ["pre-commit", "pytest", "pytest-cov"]
+
+[tool.pytest.ini_options]
+addopts = "--cov=ts"
+testpaths = [
+    "tests",
+]
+
 [tool.black]
 line-length = 100
