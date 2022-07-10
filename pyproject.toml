@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mypackage"
+description = "My package description"
+readme = "README.md"
+requires-python = ">=3.9"
+version = "0.0.1"
+dependencies = [
+    "pandas",
+    'numpy',
+    'sklearn',
+    'pytest',
+]
+
+[tool.black]
+line-length = 100
