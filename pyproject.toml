@@ -10,9 +10,10 @@ requires-python = ">=3.9"
 version = "0.0.1"
 dependencies = [
     "pandas",
-    'numpy',
-    'sklearn',
-    'pytest',
+    "numpy",
+    "sklearn",
+    "pytest",
+    "pytest-cov",
 ]
 
 [project.optional-dependencies]
